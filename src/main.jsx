@@ -9,9 +9,22 @@ const colors = {
     800: "#153e75",
     700: "#2a69ac",
   },
+  background: {
+    light: "#f0f0f0", // Light background color similar to Financial Times
+    dark: "#dcdcdc",  // Darker shade for contrast if needed
+  },
 };
 
-const theme = extendTheme({ colors });
+const theme = extendTheme({
+  colors,
+  styles: {
+    global: {
+      "html, body": {
+        backgroundColor: colors.background.light,
+      },
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

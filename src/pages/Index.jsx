@@ -2,7 +2,7 @@ import { Box, Container, VStack, Text, Heading, HStack, Link, Divider } from "@c
 import { FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Header = () => (
-  <Box as="header" bg="brand.700" color="white" py={4}>
+  <Box as="header" bg="brand.900" color="white" py={4}>
     <Container maxW="container.lg">
       <Heading as="h1" size="lg">Financial Times</Heading>
     </Container>
@@ -10,7 +10,7 @@ const Header = () => (
 );
 
 const ArticleSection = () => (
-  <Box as="section" py={6}>
+  <Box as="section" bg="background.light" py={6}>
     <Container maxW="container.lg">
       <VStack spacing={4} align="start">
         <Heading as="h2" size="md">Latest Articles</Heading>
